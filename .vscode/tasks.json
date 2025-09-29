@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build Assignment1 (MinGW + SDL3)",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "Assignment1.cpp",
+                "-o", "Assignment1.exe",
+                "-IC:/Users/penyi lee/Downloads/SDL3-devel-3.2.22-VC/SDL3-3.2.22/include",
+                "-LC:/Users/penyi lee/Downloads/SDL3-devel-3.2.22-VC/SDL3-3.2.22/lib/x64",
+                "-lSDL3"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
