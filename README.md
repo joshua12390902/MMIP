@@ -25,9 +25,11 @@ Before compiling the code, make sure the following are installed:
    C:\Users\YourName\Downloads\SDL3-devel-3.2.22-VC\SDL3-3.2.22
    ```
 
-3. Add the `include` and `lib/x64` paths in **tasks.json** (already configured if you use the provided `.vscode` folder).
+3. update the `include` and `lib/x64` paths in **tasks.json** (already configured if you use the provided `.vscode` folder , just need to update the path).
 
-4. Copy `SDL3.dll` (from `lib/x64`) into the same folder as the compiled `Assignment1.exe`.
+4. update the `includePath` paths in **c_cpp_properties.json** (eg."C:/Users/penyi lee/Downloads/SDL3-devel-3.2.22-VC/SDL3-3.2.22/include")
+
+5. Copy `SDL3.dll` (from `lib/x64`) into the same folder as the compiled `Assignment1.exe`.(already configured if you use the provided `MMIP` folder )
 
 ### Linux / WSL
 ```bash
@@ -44,7 +46,7 @@ brew install sdl3
 
 ## 3. Data Preparation
 
-- Place **six input images** in the `data/` folder:
+- Place **six input images** in the `data/` folder:  (already configured if you use the provided `MMIP` folder )
   - `lena.raw`, `goldhill.raw`, `peppers.raw`
   - `baboon.bmp`, `boat.bmp`, `f16.bmp`
 
